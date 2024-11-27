@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+
 }
 
 body {
@@ -25,6 +26,7 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin: 0 auto;
   margin-top: 40px;
+  animation: fadeIn 1.5s ease;
 }
 
 .appContainer:hover {
@@ -125,4 +127,17 @@ body {
 
 .addTaskButton:hover {
   background-color: #2563eb;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

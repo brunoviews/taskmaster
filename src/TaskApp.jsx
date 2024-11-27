@@ -3,6 +3,7 @@ import TaskForm from './components/TaskForm/TaskForm';
 import TaskList from './components/TaskList/TaskList';
 import { useEffect } from 'react';
 import './TaskApp.css';
+import {motion} from 'framer-motion';
 
 
 const TaskApp = () => {
@@ -32,6 +33,7 @@ const TaskApp = () => {
   };
 
   return (
+    
     <div className='main-container'>
     <div className="appContainer">
       <h1 className="header"><span className='title'>TaskMaster Lite</span></h1>
@@ -41,6 +43,7 @@ const TaskApp = () => {
       </div>
     </div>
     </div>
+    
   );
 };
 
