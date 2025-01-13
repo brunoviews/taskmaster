@@ -36,7 +36,7 @@ const TaskApp = () => {
     
     <div className='main-container'>
     <div className="appContainer">
-      <h1 className="header"><span className='title'>TaskMaster Lite</span></h1>
+      <h1 className="header"><span className='title'>To Do:</span></h1>
       <div className="container">
         <TaskForm onAddTask={addTask} />
         <TaskList tasks={tasks} onToggleComplete={toggleCompleteTask} onDeleteTask={deleteTask} />
